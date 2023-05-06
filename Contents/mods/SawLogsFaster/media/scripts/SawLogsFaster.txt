@@ -1,0 +1,19 @@
+module Base
+{
+    recipe Saw Logs
+    {
+        Log,
+        keep [Recipe.GetItemTypes.Saw],
+
+        CanBeDoneFromFloor:true,
+        Result:Plank=3,
+        Sound:Sawing,
+        Time:115.0,
+        Category:Carpentry,
+        OnGiveXP:Recipe.OnGiveXP.SawLogs,
+        AnimNode:SawLog,
+        Prop1:Source=2,
+        Prop2:Log,
+        Override:true,
+    }
+}
